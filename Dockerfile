@@ -1,5 +1,7 @@
 FROM debian:stable-20201117-slim AS common
 
+ENV DEBIAN_FRONTEND=noninteractive
+
 ARG REPOSITORY_URL=https://github.com/innovaker/zmk-docker
 LABEL org.opencontainers.image.source ${REPOSITORY_URL}
 
@@ -81,3 +83,5 @@ RUN \
   -r https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/v${ZEPHYR_VERSION}/scripts/requirements-run-test.txt \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
+
+ENV DEBIAN_FRONTEND=
