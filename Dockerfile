@@ -78,6 +78,7 @@ RUN \
   && apt-get -y install --no-install-recommends \
   dfu-util \
   g++-multilib \
+  gpg \
   gpg-agent \
   libsdl2-dev \
   nano \
@@ -88,6 +89,7 @@ RUN \
   python3-setuptools \
   python3-tk \
   python3-wheel \
+  ssh \
   wget \
   xz-utils \
   && pip3 install \
