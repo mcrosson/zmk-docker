@@ -80,6 +80,7 @@ RUN \
   g++-multilib \
   gpg-agent \
   libsdl2-dev \
+  nano \
   nodejs \
   python \
   python3-dev \
