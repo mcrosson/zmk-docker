@@ -28,7 +28,7 @@ RUN \
   && apt-get -y update \
   && apt-get -y -t buster-backports install --no-install-recommends cmake \
   && pip3 install -r https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/v${ZEPHYR_VERSION}/scripts/requirements-base.txt \
-  && apt-get remove -y \
+  && apt-get remove -y --purge \
       python3-pip \
       python3-setuptools \
       python3-wheel \
