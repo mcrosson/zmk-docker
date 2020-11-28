@@ -65,6 +65,7 @@ RUN \
 FROM build AS dev
 
 ENV DEBIAN_FRONTEND=
+ENV LC_ALL=C
 
 RUN \
     apt-get -y update \
@@ -79,6 +80,7 @@ RUN \
     gpg \
     gpg-agent \
     libsdl2-dev \
+    locales \
     nano \
     nodejs \
     python3-dev \
